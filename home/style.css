@@ -1,10 +1,255 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(162, 205, 216);
+}
+
+.navbar {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 10px 25px;
+  border: 1px solid #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar .logo {
+  /* border: 1px solid #000; */
+  flex-grow: 1;
+}
+
+.navbar .logo img {
+  padding-left: 2.5rem;
+  transition: all 100ms ease-in;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar .nav-list {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid #000; */
+}
+
+.navbar .nav-list a {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 100ms ease-in;
+}
+
+.navbar .nav-list a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.navbar .user {
+  flex-grow: 0.5;
+  text-align: center;
+  transition: 200ms;
+  position: relative;
+}
+
+.navbar .user .user-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+}
+.navbar .user .user-dropdown a {
+  color: white;
+  font-weight: 400;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  padding-block: 2rem;
+  margin-bottom: 7rem;
+}
+
+.heading-img {
+  width: 50%;
+  /* border: 1px solid #000; */
+}
+.heading-text {
+  width: 50%;
+  /* border: 1px solid #000; */
+  text-align: justify;
+  padding-inline: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-img img {
+  max-width: 100%;
+}
+
+.heading-text h1 {
+  font-size: 1.5rem;
+  margin-block: 0.5rem;
+}
+.heading-text p {
+  font-size: 1rem;
+}
+
+.heading-text .store-icon {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.heading-text .store-icon a img {
+  width: 15px;
+}
+
+.heading-text .store-icon a {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: ;
+  align-items: center;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  background-color: black;
+  border-radius: 0.8rem;
+}
+
+.heading-text .store-icon a:hover {
+  color: rgb(162, 205, 216);
+}
+
+/*        ABOUT SECTION          */
+
+.about {
+  background-color: lightyellow;
+  margin-block: 2rem;
+  width: 100%;
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.about h2 {
+  font-weight: 600;
+  color: red;
+  font-size: 3rem;
+}
+.about h3 {
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.about h3 span {
+  font-weight: 600;
+  color: red;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.about p {
+  padding-inline: 5rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.about .img-box {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+.about .img-box .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-content: space-between;
+  margin-top: 2rem;
+}
+
+.about .img-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* customercare section  */
+
+.customer-care {
+  width: 100%;
+  background-color: ;
+  text-align: center;
+}
+
+.customer-care h3 {
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+.customer-care h3 span:nth-child(1) {
+  color: yellow;
+}
+
+.customer-care h3 span:nth-child(2) {
+  color: blue;
+}
+
+.customer-care h3 span:nth-child(3) {
+  color: purple;
+}
+
+.customer-care h3 span:nth-child(4) {
+  color: red;
+}
+
+.customer-care h3 span:nth-child(5) {
+  color: green;
+}
+
+.customer-care p {
+  padding-inline: 5rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.customer-care div {
+  width: 90%;
+  margin-inline: auto ;
+  margin-block: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+
+.customer-care div img{
+
+  width: 300px;
+}
