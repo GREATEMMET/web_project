@@ -1,0 +1,116 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.navbar {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 10px 25px;
+  border: 1px solid #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar .logo {
+  /* border: 1px solid #000; */
+  flex-grow: .5;
+}
+
+.navbar .logo img {
+  width: 15rem;
+  padding-left: 2rem;
+  transition: all 100ms ease-in;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar .nav-list {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid #000; */
+}
+
+.navbar .nav-list a {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1.2rem;
+  transition: all 100ms ease-in;
+}
+
+.navbar .nav-list a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.navbar .user {
+  flex-grow: 0.5;
+  text-align: center;
+  transition: 200ms;
+  position: relative;
+}
+
+.navbar .user .user-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+}
+.navbar .user .user-dropdown a {
+  color: white;
+  font-weight: 400;
+}
+
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  padding: 2rem;
+  margin: 20px auto;
+  background-color:  rgb(112, 212, 212);
+}
+
+.name input {
+  width: 80%;
+  padding: 10px 20px;
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 5px 20px;
+}
+
+.contact-icon {
+  margin-top: 20px;
+  border-block: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+}

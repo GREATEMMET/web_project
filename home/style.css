@@ -35,11 +35,12 @@ body {
 
 .navbar .logo {
   /* border: 1px solid #000; */
-  flex-grow: 1;
+  flex-grow: .5;
 }
 
 .navbar .logo img {
-  padding-left: 2.5rem;
+  width: 15rem;
+  padding-left: 2rem;
   transition: all 100ms ease-in;
 }
 
@@ -58,7 +59,7 @@ body {
   font-style: italic;
   color: rgb(255, 255, 255);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 100ms ease-in;
 }
 
@@ -84,10 +85,12 @@ body {
   font-weight: 400;
 }
 
+
+/* heading section  */
 .heading {
   width: 100%;
   display: flex;
-  padding-block: 2rem;
+  padding-block: 3rem;
   margin-bottom: 7rem;
 }
 
@@ -108,53 +111,46 @@ body {
 
 .heading-img img {
   max-width: 100%;
+  width: 100rem;
 }
 
 .heading-text h1 {
-  font-size: 1.5rem;
-  margin-block: 0.5rem;
+  font-size: 2.5rem;
+  margin-block: 1rem;
 }
 .heading-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
 }
 
 .heading-text .store-icon {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
 }
 .heading-text .store-icon a img {
-  width: 15px;
+  width: 2.5rem;
 }
 
 .heading-text .store-icon a {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   display: flex;
   gap: 5px;
   flex-direction: row;
   align-items: center;
   color: white;
-  padding: 0.8rem 1.2rem;
+  padding: 1em 1.6em;
   background-color: black;
-  border-radius: 0.8rem;
-  transition: font-size 100ms ease-in;
+  border-radius: 1em;
+  transition: transform 100ms ease-in;
 }
 
 .heading-text .store-icon a:hover {
   color: rgb(162, 205, 216);
-  font-size: 0.85rem;
+  transform: scale(1.05);
 }
 
 /*        ABOUT SECTION          */
-
-.about {
-  background-color: white;
-  margin-block: 2rem;
-  width: 100%;
-  text-align: center;
-  padding-block: 5rem;
-  position: relative;
-}
 
 .about > img {
   width: 20rem;
@@ -164,29 +160,44 @@ body {
   transform: translate(-100px, -100px);
 }
 
+
+.about {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding-block: 10rem;
+  position: relative;
+}
+
+
+
 .about h2 {
   margin-top: 10rem;
+  margin-bottom:3rem ;
   font-weight: 600;
   color: red;
   font-size: 3rem;
 }
 .about h3 {
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5rem;
 }
 .about h3 span {
-  font-weight: 600;
+  font-weight: 400;
   color: red;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 1rem;
 }
 
 .about p {
   padding-inline: 5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   line-height: 2rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  letter-spacing: .4rem;
+  line-height: 3rem;
 }
 
 .about .img-box {
@@ -198,14 +209,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-around;
+  justify-content: center;
   align-content: space-between;
   margin-top: 2rem;
+ 
 }
 
 .about .img-box img {
-  width: 200px;
-  height: 200px;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
 }
 
@@ -217,8 +229,8 @@ body {
 }
 
 .customer-care h3 {
-  margin-top: 50px;
-  font-size: 2.5rem;
+  margin-top: 10rem;
+  font-size: 4rem;
 }
 
 .customer-care h3 span:nth-child(1) {
@@ -243,24 +255,24 @@ body {
 
 .customer-care p {
   padding-inline: 5rem;
-  margin-top: 1rem;
-  line-height: 2rem;
-  font-size: 0.9rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  letter-spacing: .3rem;
+  font-size: 1.2rem;
 }
 
 .customer-care div {
   width: 90%;
   margin-inline: auto;
-  margin-block: 30px;
+  margin-block: 5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  row-gap: 2rem;
+  justify-content: center;
+   column-gap: 2rem;
 }
 
 .customer-care div img {
-  width: 300px;
+  width: 40rem;
 }
 
 /*        footer section      */
@@ -270,7 +282,8 @@ body {
   justify-content: space-evenly;
   background-color: rgb(0, 183, 255);
   color: white;
-  padding-block: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer > div {
@@ -279,27 +292,31 @@ body {
 }
 
 .footer .contact{
-padding-inline: 2rem;
+padding-inline: 4rem;
 }
 
 
 .footer .contact h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size:1.5rem;
+  letter-spacing: .3rem;
+  font-weight: 600;
 }
 
 .footer .contact p {
-  margin-block: 0.5rem;
-  font-size: 0.8rem;
+  margin-block: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
+  letter-spacing: .3rem;
+  font-weight: 200;
 }
 .footer .contact .footer-icon {
-  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer .contact .footer-icon img {
-  width: 2.5rem;
+  width: 3rem;
 }
 
 .footer .contact .footer-icon img:hover {
@@ -312,32 +329,38 @@ padding-inline: 3rem;
 }
 .footer .link h3 {
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .footer .link ul li a {
   color: white;
-  margin-block: 0.5rem;
-  font-size: 0.8rem;
+  display: inline-block;
+  margin-block: .3rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
+  letter-spacing: .3rem;
+  font-weight: 200;
 }
 
 .footer .news h3 {
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .footer .news form {
-  margin-block: 0.5rem;
+  margin-block: 1rem;
 }
 
 .footer .news form input {
-  margin-bottom: 0.5rem;
-  padding: 1rem 2.5rem;
-  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
   width: 80%;
 }
 
 .footer .news form button {
   padding: 1rem 2.5rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   width: 80%;
   background-color: goldenrod;
   border: none;
