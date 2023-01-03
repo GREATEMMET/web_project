@@ -12,8 +12,10 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  
+  background-color: rgb(62, 102, 102);
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
@@ -33,7 +35,7 @@ body {
 
 .navbar .logo {
   /* border: 1px solid #000; */
-  flex-grow: .5;
+  flex-grow: 0.5;
 }
 
 .navbar .logo img {
@@ -83,29 +85,57 @@ body {
   font-weight: 400;
 }
 
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
+/* main section */
 
 .container {
-  width: 300px;
+  width: 350px;
   padding: 2rem;
   margin: 20px auto;
-  background-color:  rgb(112, 212, 212);
+  background-color: rgb(116, 199, 199);
+  border-radius: 1.2rem;
 }
 
-.name input {
+.container h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.inner {
   width: 80%;
-  padding: 10px 20px;
+  margin: auto;
+  margin-top: 3rem;
 }
 
+.fullname label {
+  font-size: 1.3rem;
+}
+
+.fullname input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+}
+
+.phone label {
+  font-size: 1.3rem;
+}
+.phone input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+}
+
+.email label {
+  font-size: 1.3rem;
+}
 input[type="email"] {
-  width: 80%;
-  padding: 5px 20px;
+  width: 100%;
+  padding: 0.8rem 2rem;
 }
 
 .contact-icon {
@@ -113,4 +143,17 @@ input[type="email"] {
   border-block: 1px solid gray;
   display: flex;
   justify-content: space-around;
+}
+
+.msg label{
+  font-size: 1.3rem;
+}
+
+button:hover{
+background-color: #0a8680;
+border: none;
+color: white;
+}
+.contact-icon a img:hover {
+  transform: scale(1.2);
 }
