@@ -77,14 +77,26 @@ body {
 
 .navbar .user .user-dropdown {
   display: none;
-  background-color: #20b2aa;
   position: absolute;
   top: 100%;
   left: 20%;
+  font-size: 1.5rem;
+  background-color: #0a8680;
+  padding: 1rem;
 }
+ 
+.display {
+  display: block!important;
+}
+
 .navbar .user .user-dropdown a {
   color: white;
   font-weight: 400;
+  margin-block: 1rem;
+  display: block;
+}
+.navbar .user .user-dropdown a:hover{
+  color: #000000;
 }
 
 /* main section  */
